@@ -1,0 +1,469 @@
+/* @charset "UTF-8";
+/* 
+  Reset CSS 
+  Youtube 👉 https://www.youtube.com/watch?v=Foieq2jTajE 
+  Github  👉 https://github.com/eduardofierropro/Reset-CSS
+*/
+
+:root {
+  --negro: #9d00ff;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+  --text-color: rgb(255, 255, 255);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* vertical-align: baseline; */
+}
+
+
+
+
+
+
+/* 
+ body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background-color: #f7e481;
+  flex-direction: column;
+
+}  */
+
+body{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #ffffff;
+  /* background: rgb(192, 192, 192); */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-top: 20px;
+  /* background-image: url(/img/background.jpg); */
+
+  -webkit-background-size: cover;
+  background-size:contain;
+  background-position: center center;
+}
+
+
+
+
+.container, .c1  {
+
+  width: 490px;
+  height: 290px; 
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.medex.pe/images/podologia.jpg");
+
+  /* background-image: url("https://promedicas.mx/cuernavaca/wp-content/uploads/2021/06/podologia-especialidad.jpg");    */
+  
+   background-position:right;
+   background-size: 100%;
+  flex-shrink: 2;
+  overflow: hidden; 
+  box-shadow: 0 0 0 10px #fff,
+              0 0 0 11px #ccc,
+              0 20px 20px -12px #000;
+}
+
+
+p {
+  font-size: 3.3vh;
+  text-align: justify;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* background: rgba(0, 0, 0, .8); */
+  color: var(--text-color);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 0.5em;
+  box-sizing: border-box;
+  /* position: relative; */
+  top: 100%;
+  /* transition:all .3s; */
+}
+
+.c2  {
+  font-size: 1vh;
+  background-image: url(https://www.barrenacraus.com/wp-content/uploads/2021/01/POST-BARRENA-CRAUS-principal-ARTICULO-podologo-1024x727.jpg);  
+  }
+  
+  .container:hover p{
+    top: 0;
+  
+  }
+  
+.presentacion{
+  background: rgba(0, 255, 191, 0.5);
+  color: #000;
+  font-size: 2.8vh;
+  margin-top: 20px;
+
+}
+
+/*whatsapp flotante*/
+.whatsapp { 
+  position:fixed; 
+  width:64px; 
+  height:64px;
+  bottom:90px;
+  right:30px;
+  /* background-color:#21d964;  
+  color:#FFF; */
+  border-radius:50px; 
+  text-align:center; 
+  font-size:48px; 
+  z-index:100;
+} 
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  height: 6vh; 
+  width: 100%;
+
+  /* align-self: flex-end; */
+  /* bottom: 0; */
+  background-color: var(--theme-color);
+  justify-content:center;
+  align-items: center; 
+  /* padding-right: 25px;  */
+  align-items:center;
+  text-align: justify;
+}
+.pie{
+ display: flex;
+ flex-wrap:wrap;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ font-size: 14px;   
+}
+
+
+img, picture,iframe, figure {
+  max-width: 80%;
+  width: 80%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+video{
+  /* max-width: 100%;
+  width: 100%; */
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+
+}
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+ a:hover {
+  /* background: #6ef7be; */
+  color: hwb(309 5% 8%);
+}
+
+.logo{
+  width: 85px;
+  height: 60px;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ h2, h3, h4, h5, h6, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1.3em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+i{
+  font-size: 1.6em;
+
+
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+
+
+/* Código */
+main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* max-width: 1000px; */
+  justify-content: center;
+  /* margin-top: 20px ; */
+  align-items: center;
+}
+.header{
+  position:absolute;
+  top: 0;
+  width:100%;
+  background-color: #282828;
+  padding: 1em;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  color:white;
+}
+.header .h1{
+  /* background-color: aqua; */
+  font-size: 2.5vh;
+  
+}
+.cajatituloinicio{
+  margin-top: -200px;
+
+  /* margin-bottom: -250px; */
+ 
+  /* height: 300px; */
+}
+
+.cajatituloinicio h1{
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'Playball', cursive; */
+  font-family: 'Satisfy', cursive;
+  /* font-family: 'Lilita One', cursive; */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 5.5vh;
+  color:rgb(255, 0, 221);
+  text-align: center;
+}
+
+.cajatitulo {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 20px;  
+  /* margin-top: 10%; */
+}
+.cajatitulo h1{
+  text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 2.5vh;
+text-align: center;
+
+/* color: var(--titulos); */
+}
+.cajatitulo i{
+  font-size: 17px;
+}
+/* .servicios h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+.servicios{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .servicios img{
+  width: 35px;
+  height: 35px;
+  display: initial;
+} */
+
+
+li{
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 2.3vh;
+  color: var(--text-color);
+  
+}
+.FotoGaleria{
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  margin-top: 15px;
+}
+.header .button{
+  /* background-color: crimson; */
+  display: none;
+}
+.header .svg{
+  width:2.2em;
+  height:2.2em;
+  fill:white;
+  margin-right: 25px;
+}
+.header .nav{
+  /* background-color: bisque; */
+  justify-content: center;
+  
+}
+.header .ul{
+  display: flex;
+  flex-flow:wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.header .li{
+  margin: 0 .5em;
+}
+/* section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 15px;
+  align-items: center;
+
+} */
+
+
+.datos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.datos h3{
+  font-size: 2em;
+  padding-bottom: 15px;
+}
+.datos a{
+  align-content: center;
+  display: flex;
+  padding: 15px;
+  display: inline;
+}
+
+/* .fa-lg {
+  font-size:1.25em;
+  line-height:0.9em;
+  vertical-align:-.075em
+ } */
+
+@media screen and (max-width:576px){
+  .header .button{
+    display: block;
+    cursor: pointer;
+  }
+  .container{
+    width: 340px;
+    height: 204px; 
+  }
+
+
+  .header .nav{
+    width:100%;
+   /* display: none; */
+    height:0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav.activo{
+    /* display: block; */
+    height:50vh;
+    pointer-events: auto;
+  }
+  .header .ul{
+    flex-direction: column;
+    justify-content: center;
+  }
+   .header .li{
+    margin: 1rem 0;
+  } 
+  .header .logo{
+    margin-left: 25px;
+  }    
+
+
+}
+
+/* @media screen and (max-width: 350px) {
+  .container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}  */ 

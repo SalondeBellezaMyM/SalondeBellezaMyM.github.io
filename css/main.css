@@ -1,0 +1,251 @@
+:root {
+  --theme-color: #3e3e3c;
+  --theme-color-fondo:#000000;
+  --primary-color: #ffffff;
+  --secundary-color: #ffffff;
+  --text-color-inverse: rgb(230, 0, 255);
+  --text-color: rgb(255, 255, 255);
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #010101;
+  --titulos: rgb(246, 226, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--theme-color-fondo);
+  color: var(--text-color);
+  padding-top: 70px;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.horizontal-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.vertical-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.inicio{
+  width: 100%; 
+  background-image: url("../img/portadaa.avif"); 
+  /* background-color: #000000; */
+  /* background-size: cover;  */
+  /* background-size: 400px 380px; */
+   background-position: center top;  
+  /* background-position: 50% 10%; */
+  background-repeat: no-repeat;
+  height: 870px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 15px;
+  align-items: center;
+
+}
+.inicio img{
+  max-width: 100%;
+  width: auto;
+  
+}
+.ofrecimientos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 25px;
+  padding-left: 15px;
+}
+.ofrecimientos ul li{
+  text-align:left;
+
+}
+.masajes{
+  text-align: justify;
+}
+.titulo{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.nosotros p{
+  font-size: 20px;
+  text-align: justify;
+  padding: 15px;
+  
+}
+.separador{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+.separador img{
+  width: 395px; 
+}
+
+.mapa{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.dire{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;  
+}
+.fa-lg{
+  line-height:  none;
+}
+
+.mercadopago {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.mercadopago img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: auto;
+}
+@media (min-width: 950px) {
+  .horizontal-padding {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .vertical-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #282c34;
+  font-family: sans-serif;
+  font-size: 3rem;
+} */
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grid-itemNocenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(400px, auto);
+  gap: 10px;
+  padding: 20px;
+  grid-auto-flow: dense;
+
+}
+.contacto{
+  margin-bottom: 100px;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+
+  .tall-1 {
+    grid-row: span 1;
+  }
+}
+
+
+ 
+
+@media (min-width: 801px){
+  .cajatitulo h1{
+    font-size: 8vh;
+  }
+  .cajatituloinicio h1{
+    font-size: 6vh;
+    display: none;
+
+  }
+  .movil{
+    display: none;
+  }
+  .inicio{
+    display:flex;
+    justify-content: center;
+    background-image: url("../img/portadaa.avif");
+
+    background-size:auto; 
+  }
+.cualidades ul li{
+    font-size: 5vh;
+  }
+ li{
+    font-size: 7vh;
+  }
+ p{
+  font-size: 7vh;
+ } 
+}
