@@ -112,34 +112,17 @@ p {
   /* position: relative; */
   top: 100%;
   /* transition:all .3s; */
-}
-
-.c2  {
-  font-size: 1vh;
-  background-image: url(https://www.barrenacraus.com/wp-content/uploads/2021/01/POST-BARRENA-CRAUS-principal-ARTICULO-podologo-1024x727.jpg);  
-  }
-  
-  .container:hover p{
+} 
+.container:hover p{
     top: 0;
-  
-  }
-  
-.presentacion p{
-  font-family: 'Satisfy', cursive;
-  color: rgb(255, 255, 255);
-  font-size: 2.8vh;
-  margin-top: 20px;
-  text-align: justify;
-
 }
-
 /*whatsapp flotante*/
 .whatsapp { 
   position:fixed; 
   width:64px; 
   height:64px;
-  bottom:90px;
-  right:30px;
+  bottom:70px;
+  right:25px;
   /* background-color:#21d964;  
   color:#FFF; */
   border-radius:50px; 
@@ -357,7 +340,7 @@ main{
 
 li{
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-size: 2.3vh;
+  font-size: 4vh;
   color: var(--text-color);
   
 }
