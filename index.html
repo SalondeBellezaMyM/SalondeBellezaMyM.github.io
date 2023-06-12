@@ -66,6 +66,22 @@
   </header>
 
   <main>
+    <div>
+      <audio id="audio" controls autoplay="">
+        <source src="audio/Nathan Dawe x Ella Henderson  21 Reasons Official.mp3"
+          type="audio/mp3">
+      </audio>
+
+      <!-- <button class="playPauseBTN" id="playPauseBTN" onclick="playPause()"></button> -->
+      <div class="playPauseBTN" id="playPauseBTN" onclick="playPause()" alt="">
+        <i class="fa-solid fa-music fa-beat" style="color: #ffffff;"></i>
+      <!--  <i class="fa-solid fa-volume-high parlante"></i> -->
+      </div>
+      <span class="material-icons-outlined">
+      </span>
+      <!-- Play ►/ Pause -->
+      <!-- <button onclick="stop()">Stop ▋</button> -->
+    </div>
 
     <section class="inicio" id='inicio'>
       <img src="" alt="" class="movil">
@@ -121,6 +137,7 @@
           <div class="grid-itemNocenter wide" style="background-image: url('img/t1.jpg');"></div>      
           <div class="grid-item" style="background-image: url('img/t2.jpg');"></div>
           <div class="grid-item" style="background-image: url('img/t3.jpg')"></div>
+          <div class="grid-item" style="background-image: url('img/t4.jpeg')"></div>
         </div>
     </section>
 
@@ -137,9 +154,11 @@
             
             <div class="grid-item tall-1" style="background-image: url('img/bar2.jpg');"></div>  
             <div class="grid-item tall-1" style="background-image: url('img/bar3.jpg');"></div>
+            <div class="grid-item tall-1" style="background-image: url('img/bar\ 3\ 3.jpg');"></div>
+            <div class="grid-item tall-1" style="background-image: url('img/bar\ 3\ 4.jpg');"></div>
+            <div class="grid-item tall-1" style="background-image: url('img/bar\ 3\ 5.jpg');"></div>
             <div class="grid-item" style="background-image: url('img/bar4.jpg');"></div>
             <div class="grid-item" style="background-image: url('img/bar5.jpg');"></div>
-
           </div>
         </id>
         
@@ -214,7 +233,31 @@
     <div class="pie"> Sitio Web Creado x&nbsp;<a href="http://wwww.facebook.com/digitalproject10">Digital Project</a>
     </div>
   </footer>
+  
+  <script>
+    var audio = document.getElementById('audio');
+    var playPauseBTN = document.getElementById('playPauseBTN');
+    var count = 0;
 
+    function playPause() {
+      if (count == 0) {
+        count = 1;
+        audio.play();
+        playPauseBTN.innerHTML = "<b>PAUSA</b>";
+      } else {
+        count = 0;
+        audio.pause();
+        playPauseBTN.innerHTML = "<b>PLAY ►</b>";
+      }
+
+    }
+    function stop() {
+      playPause()
+      audio.pause();
+      audio.currentTime = 0;
+      playPauseBTN.innerHTML = "Play ►";
+    }
+  </script>
     
 </body>
 </html>

@@ -216,6 +216,75 @@ body {
   /* margin-bottom: 100px; */
 }
 
+/*audio*/
+
+.playPauseBTN {
+	/* padding: 10px 25px;
+	font-size: 22px;
+	line-height: 40px;
+	min-width: 150px;
+	text-align: center;
+	cursor: pointer;
+	background: linear-gradient(to right bottom,#273c75,#079992);
+	color: #fff;
+	border-radius: 5px;
+	border:0px;
+	height: 60px; */
+
+  float:left;
+  right:0;
+  top:30%;
+  position:fixed;
+  -webkit-transform-origin:0 0;
+  -moz-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  -o-transform-origin:0 0;
+  transform-origin:0 0;
+  background-color:#f202fa;
+  background-image:"/img/pause-play.png";
+  letter-spacing:2px;
+  font-family:"montserrat";
+  color:#fff;
+  border-radius:3px 0 0 3px;
+  font-weight:90;
+  font-size:0.6em;
+  cursor:pointer;
+  width:50px;
+  height:40px;
+  z-index:1000;
+  text-align: center;
+  
+}
+.playPauseBTN b{
+  margin-top: 15px;
+}
+.playPauseBTN i{
+  font-size: 25px;
+  margin-top: 9px;
+  margin-left: 7px;
+}
+
+
+/* Musica de fondo */
+
+#player-musica-fondo{
+  position: absolute;
+  left:-99999px;
+}
+
+#controlador-musica{
+  top: initial;
+  bottom:0;
+  right: 0;
+}
+
+.music-anim-icon{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+
 @media (min-width: 600px) {
   .wide {
     grid-column: span 2;
