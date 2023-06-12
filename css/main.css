@@ -7,7 +7,7 @@
   --text-color: rgb(255, 255, 255);
   --navbar-shallow-color: #e5e5e5;
   --menu-mobile-background-color: #010101;
-  --titulos: rgb(246, 226, 1);
+  --titulos: rgb(255, 255, 255);
 }
 
 html {
@@ -71,13 +71,17 @@ a {
   padding-left: 15px;
 }
 .ofrecimientos ul li{
-  text-align:left;
-
+  text-align: left;
 }
 .masajes{
   text-align: justify;
 }
+.masajes ul li{
+  text-align: justify;
+
+}
 .titulo{
+  font-family: 'Satisfy', cursive;
   margin-top: 20px;
   text-align: center;
 }
@@ -204,7 +208,11 @@ body {
   grid-template-columns: auto auto auto auto;
 }
 .contacto{
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-bottom: 100px; */
 }
 
 @media (min-width: 600px) {

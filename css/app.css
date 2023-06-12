@@ -124,11 +124,12 @@ p {
   
   }
   
-.presentacion{
-  background: rgba(0, 255, 191, 0.5);
-  color: #000;
+.presentacion p{
+  font-family: 'Satisfy', cursive;
+  color: rgb(255, 255, 255);
   font-size: 2.8vh;
   margin-top: 20px;
+  text-align: justify;
 
 }
 
@@ -173,8 +174,8 @@ footer{
 
 
 img, picture,iframe, figure {
-  max-width: 80%;
-  width: 80%;
+  max-width: 100%;
+  width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -182,13 +183,14 @@ img, picture,iframe, figure {
      object-position: center center;
 }
 video{
-  /* max-width: 100%;
-  width: 100%; */
-  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto; 
+/*  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
-     object-position: center center;
+     object-position: center center; */
 
 }
 .video{
@@ -322,14 +324,13 @@ main{
 .cajatitulo img{
   width: 100%;
   height: auto;
-  padding: 55px;
 
 }
 .cajatitulo h1{
   text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 2.5vh;
-text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 6vh;
+  text-align: center;
 
 /* color: var(--titulos); */
 }
@@ -405,19 +406,21 @@ li{
 .datos{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: column;
   margin-top: 15px;
+  margin-left: 20px;
 }
 .datos h3{
   font-size: 2em;
   padding-bottom: 15px;
 }
 .datos a{
-  align-content: center;
+  align-content: left;
+  text-align: left;
   display: flex;
-  padding: 15px;
+  padding: 10px;
   display: inline;
 }
 
