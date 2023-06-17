@@ -240,14 +240,21 @@
     var count = 0;
 
     function playPause() {
+      const h2 = document.getElementById("playPauseBTN");
+      
       if (count == 0) {
         count = 1;
         audio.play();
-        playPauseBTN.innerHTML = "<b>PAUSA</b>";
+        let html = "<i class='fa-solid fa-pause' style='color: #ffffff;'/>";
+        // h2.insertAdjacentHTML("", html);
+        playPauseBTN.innerHTML = "<i class='fa-solid fa-pause' style='color: #ffffff;''></i>";
+        // playPauseBTN.innerHTML = "<b>PAUSA</b>";
       } else {
         count = 0;
         audio.pause();
-        playPauseBTN.innerHTML = "<b>PLAY ►</b>";
+         let html = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
+        // h2.insertAdjacentHTML("afterbegin", html);
+         playPauseBTN.innerHTML = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
       }
 
     }
